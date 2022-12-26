@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>The_drum's_Time</title>
+		<link rel="shortcut icon" href="images/logo.ico" />
+		<link rel="stylesheet"  href="css/style.css" type="text/css" media="screen" />
+	</head>
+
+	<body>
+		<header>
+			<div class="h">
+				<h1>The drum's Time</h1>
+			</div>
+			<i>Apprendre la batterie, s'amuser et progresser</i> 
+		</header>
+			
+		<nav>
+			<ul class="menu">
+				<li><a href="accueil.html">Accueil</a></li>
+				<li><a href="formulaire.html">Formulaire</a></li>
+				<li><a href="masterclass.html">Masterclass</a></li>
+				<li><a href="bases.html">Les Bases</a></li>
+				
+			</ul>
+		</nav>
+
+		<main>
+			<form method="post" action="mailto:geffetheo@gmail.com">
+				<h1> Formulaire d'inscription</h1>
+				<div class="field">	
+					<fieldset>
+						<legend class="fo">
+							<h3>Informations personnelles</h3> 
+						</legend> 
+						<table class="help">
+							<tr> 
+								<td>
+									<div class="obligatoire">
+										<label for="lastname">Nom</label> 
+									</div>
+								</td>
+							
+								<td><input type="text" id="lastname" name="nom" maxlength="30" placeholder="DUPONT" required="required" /> </td>  
+							</tr>    
+								
+							<tr>
+								<td>
+									<div class="obligatoire">
+										<label for="name"> Prénom </label>  
+									</div> 
+								</td> 
+								<td> 
+									<input type="text" id="name" name="prenom" maxlength="30" placeholder="Alain" required="required" /> 
+								</td> 
+							</tr>
+								
+							<tr> 
+								<td>
+									<div class="gauche">
+										<label for="genre"> Genre</label> 
+									</div>  
+								</td> 
+								<td>
+									<select name="text" size="1" id="genre">
+										<option value="1">Homme</option>
+										<option value="1">Femme</option>
+									</select>  
+								</td>
+							</tr>
+								
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="datee">Date de naissance</label>
+									</div>
+								</td>
+								<td>
+									<input type="date" name="naissance" id="datee" />
+								</td>
+							</tr>
+								
+							<tr> 
+								<td>
+									<div class="gauche">
+										<label for="region"> R&eacute;gion </label>
+									</div> 
+								</td>
+								<td> 
+									<select name="région" size="1" id="region">
+										<option value="1">Auvergne-Rhône-Alpes</option>
+										<option value="2">Bourgogne-Franche-Comté</option>
+										<option value="3" selected="selected">Grand Est</option>
+										<option value="4">Centre-Val de Loire</option>
+										<option value="5">Corse</option>
+										<option value="6">Marie</option> 	
+										<option value="7">Bretagne </option>
+										<option value="8">Hauts-de-France </option>
+										<option value="9"> Île-de-France </option>
+										<option value="10"> Normandie </option>
+										<option value="11"> Nouvelle-Aquitaine </option>
+										<option value="12"> Occitanie</option>
+										<option value="13"> Pays de la Loire</option>
+										<option value="14"> Provence-Alpes-Côte d'Azur</option>
+									</select> 
+								</td>
+							</tr>	
+
+							<tr>
+								<td>
+									<div class="obligatoire">
+										<label for="email"> Adresse email</label>
+									</div>
+								</td>
+								<td>
+									<input type="text" name="Email" id="email" required="required" />
+								</td>
+							</tr>
+								
+							<tr>
+								<td>
+									<div class="obligatoire">
+										<label for="num" > Num&eacute;ro de t&eacute;l&eacute;phone  </label>
+									</div>
+								</td>
+								<td>
+									<input type="text" id="num" name="numero" maxlength="20" placeholder="+33 ...." required="required"  />
+								</td>
+							</tr>
+						</table>
+					</fieldset> 
+				</div>
+				<div class="field"> 
+					<fieldset>
+						<legend class="fo">
+							<h3>Le type d'apprentissage</h3>
+						</legend>
+						<table class="help">
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="niveau">Votre niveau</label>
+									</div>
+								</td>
+								<td>
+									<input type="range" name="niveau" min="1" max="5" id="niveau" />
+								</td>
+							</tr>
+							
+							<tr> 
+								<td>
+									<div class="gauche">
+										<label for="pratique"> Temps de pratique </label>
+									</div>
+								</td>
+								<td>
+									<input type="radio" name="temms" value="1" checked="checked" id="pratique" /> 30 min <br/>
+									<input type="radio" name="temms" value="1"  checked="checked"  /> 1h - 2 h <br/>
+									<input type="radio" name="temms" value="1"  checked="checked" /> + 2h 
+								</td>
+							</tr>
+														
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="type">Types de musiques  </label>
+									</div>
+								</td>
+								<td>
+									<select name="types" size="4" multiple="multiple" id="type"> 
+										<option value="1">Rock</option>
+										<option value="2">Jazz</option>
+										<option value="3">Hard-rock</option>
+										<option value="4">Samba</option>
+										<option value="5">Pop</option>
+										<option value="6">Country</option>
+									</select>
+								</td> 
+							</tr>
+							
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="color"> Couleur de votre batterie </label>
+									</div>
+								</td>
+								<td>
+									<input type="color" name="couleur" id="color"/>
+								</td>
+							</tr>
+						</table>
+					</fieldset> 
+				</div>
+				
+				<div class="field">
+					<fieldset>
+						<legend class="fo">
+							<h3> Information pratique</h3>
+						</legend>
+						<table class="help">
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="pref">Pr&eacute;f&eacute;rence manuelle</label>
+									</div>
+								</td>
+								<td>
+									<input type="radio" name="main" value="1" checked="checked" id="pref"/> Gauche
+									<input type="radio" name="main" value="1" checked="checked" /> Droite 
+								</td>
+							</tr>
+											
+							<tr>
+								<td>
+									<div class="gauche">
+										<label for="tamb">Nombre de tambour</label>
+									</div>
+								</td>
+								<td>
+									<input type="number" name="nombre" min="0" max="7" id="tamb"/>
+								</td> 
+							</tr>
+						</table>
+						<div> 
+							<label for="info">Informations supl&eacute;mentaires</label>
+							<textarea  class="test" name="message" rows="4" id="info" ></textarea>
+						</div>
+					</fieldset>
+				</div>
+			
+				<div class="va">
+					<input type="submit" value="Valider"/>
+				</div>
+			</form>
+
+			<div class="page"> <p> page 2</p></div>
+			<span id="goTop"><a href="#top">Go Back Top</a></span>
+		</main>
+		<footer> </footer>
+	</body>
+</html>
